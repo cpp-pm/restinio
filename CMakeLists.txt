@@ -16,8 +16,8 @@ find_package(http-parser CONFIG REQUIRED)
 hunter_add_package(fmt)
 find_package(fmt CONFIG REQUIRED)
 
-set(RESTINIO_MASTER_PROJECT Off)
+set(RESTINIO_FIND_DEPS On)
 set(RESTINIO_INSTALL On)
 #set(RESTINIO_STAND_ALONE_ASIO_HEADERS asio/include )
 
-add_subdirectory("dev")
+add_subdirectory("dev/restinio")
